@@ -10,7 +10,7 @@
  http://cagataycali.xyz
  */
 'use strict';
-import AWS from 'aws-sdk';
+const AWS = require('aws-sdk');
 
 module.exports = class Sender {
   constructor(config) {
