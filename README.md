@@ -131,3 +131,5 @@ var sender = new Sender(config);
 // sender.sendSms('Sms body topic', 'Topic sms', true);
 // sender.sendSms('Sms body direct', 'Topic sms', false, '+905054146201');
 ```
+
+Maintenance & Development [Çağatay Çalı](http://github.com/ccali14)
