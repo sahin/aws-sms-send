@@ -9,9 +9,10 @@
  Friday, July 29, 2016 1:30 PM
  http://cagataycali.xyz
  */
+'use strict';
 import AWS from 'aws-sdk';
 
-export default class Sender {
+module.exports = class Sender {
   constructor(config) {
     this.AWS = AWS.config.update(config.AWS);
     this.sns = new AWS.SNS({ apiVersion: '2010-03-31' });
@@ -75,4 +76,4 @@ export default class Sender {
     });
   }
   /* Publish sms */
-}
+};
