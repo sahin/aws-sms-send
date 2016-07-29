@@ -72,6 +72,14 @@ main.run().catch((error) => {
 
 ```
 
+# Using example in es6 with babel
+
+Git clone,
+cd path/dir,
+npm i,
+edit demo.js,
+node start.js.
+
 
 # Example package.json
 Note: this lib working with es6
@@ -98,3 +106,8 @@ Note: this lib working with es6
   "eslint-plugin-react": "^5.2.2"
 }
 ```
+
+
+# Using without es6 - babel
+
+[Aws send sms without es6 - babel demo](https://github.com/ccali14/aws-sms-send-demo)
