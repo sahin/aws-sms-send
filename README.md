@@ -45,7 +45,7 @@ main.run().catch((error) => {
 
 All in one
 ```
-import Sender from './Sender.js';
+import Sender from 'aws-sms-send';
 
 const config = {
   AWS: {
