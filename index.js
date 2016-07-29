@@ -19,7 +19,7 @@ module.exports = class Sender {
     this.topicArn = config.topicArn;
   }
   /* Init */
-  async init(AWSAccountId, Label) {
+  init(AWSAccountId, Label) {
     const params = {
       AWSAccountId: [ /* required */
         AWSAccountId,
@@ -39,7 +39,7 @@ module.exports = class Sender {
   }
   /* Init */
   /* Create subscribe */
-  async createSubscribe(Endpoint) {
+  createSubscribe(Endpoint) {
     const subscribeParams = {
       Protocol: 'sms', /* required */
       TopicArn: this.topicArn, /* required */
@@ -52,7 +52,7 @@ module.exports = class Sender {
   }
   /* Create subscribe */
   /* Publish sms */
-  async sendSms(smsBody, Subject, isTopic, PhoneNumber = '') {
+  sendSms(smsBody, Subject, isTopic, PhoneNumber = '') {
     let smsParams;
     if (isTopic) {
       smsParams = {
