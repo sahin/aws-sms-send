@@ -41,6 +41,6 @@ var sender = new Sender(config);
 // sender.sendSms('Sms body direct', 'Topic sms', false, '+905054146201');
 ```
 
-![GIF](aws.gif)
+![GIF](https://github.com/svtek/aws-sms-send/blob/master/aws.gif)
 
 Maintenance & Development [Çağatay Çalı](http://github.com/ccali14)
