@@ -9,7 +9,6 @@
  Friday, July 29, 2016 1:30 PM
  http://cagataycali.xyz
  */
-'use strict';
 const AWS = require('aws-sdk');
 
 module.exports = class Sender {
