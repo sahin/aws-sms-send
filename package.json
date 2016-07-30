@@ -1,6 +1,6 @@
 {
   "name": "aws-sms-send",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "Aws sms sender",
   "main": "index.js",
   "scripts": {
