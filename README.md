@@ -12,7 +12,6 @@ Let's save your :heavy_dollar_sign:
 [![Code Climate](https://codeclimate.com/github/svtek/aws-sms-send/badges/gpa.svg)](https://codeclimate.com/github/svtek/aws-sms-send)[![GitHub issues](https://img.shields.io/github/issues/svtek/aws-sms-send.svg)](https://github.com/svtek/aws-sms-send/issues)[![GitHub stars](https://img.shields.io/github/stars/svtek/aws-sms-send.svg)](https://github.com/svtek/aws-sms-send/stargazers)
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/svtek/aws-sms-send.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
 [![NPM](https://nodei.co/npm/aws-sms-send.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/aws-sms-send/)
-[![NPM](https://nodei.co/npm-dl/aws-sms-send.png)](https://nodei.co/npm/aws-sms-send/)
 # Installing
 
 ```
