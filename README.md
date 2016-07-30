@@ -1,4 +1,7 @@
 AWS SMS SEND
+[![Code Climate](https://codeclimate.com/github/svtek/aws-sms-send/badges/gpa.svg)](https://codeclimate.com/github/svtek/aws-sms-send)
+[![GitHub issues](https://img.shields.io/github/issues/svtek/aws-sms-send.svg)](https://github.com/svtek/aws-sms-send/issues)
+[![GitHub stars](https://img.shields.io/github/stars/svtek/aws-sms-send.svg)](https://github.com/svtek/aws-sms-send/stargazers)[![Twitter](https://img.shields.io/twitter/url/https/github.com/svtek/aws-sms-send.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
 ==================
 
 > **The problem:**
