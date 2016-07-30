@@ -1,5 +1,4 @@
 # AWS SMS SEND
-==================
 
 > **The problem:**
 Classic Amazon – pricing is immediately at Wal-Mart levels. Sending an SMS message is a mere 0.0075 cents.  Want to push notify 1 million end-points. Well that’s a 1. All of this quantity 1 for the lowly guy with a credit card. To get this SMS pricing level at Twilio, you’ve got to already be sending 500k text messages a month.  The difference doesn’t sound like much. What’s 0.0025 amongst friends.**But at the 500k message level that’s a savings of $1,250 a month.!**
