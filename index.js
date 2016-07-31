@@ -17,62 +17,59 @@ module.exports = class Sender {
     this.sns = new AWS.SNS({ apiVersion: '2010-03-31' });
     this.topicArn = config.topicArn;
   }
-  /* Init */
   init(AWSAccountId, Label) {
-    const params = {
-      AWSAccountId: [ /* required */
-        AWSAccountId,
-        /* more items */
-      ],
-      ActionName: [ /* required */
-        'Publish',
-        /* more items */
-      ],
-      Label, /* required */
-      TopicArn: this.topicArn, /* required */
-    };
-    this.sns.addPermission(params, (err, data) => {
-      if (err) console.log(err, err.stack);
-      else console.log(data);
+    return new Promise((resolve, reject) => {
+      const params = {
+        AWSAccountId: [
+          AWSAccountId,
+        ],
+        ActionName: [
+          'Publish',
+        ],
+        Label,
+        TopicArn: this.topicArn,
+      };
+      this.sns.addPermission(params, (err, data) => {
+        if (err) reject(err, err.stack);
+        else resolve(data);
+      });
     });
   }
-  /* Init */
-  /* Create subscribe */
   createSubscribe(Endpoint) {
-    const subscribeParams = {
-      Protocol: 'sms', /* required */
-      TopicArn: this.topicArn, /* required */
-      Endpoint,
-    };
-    this.sns.subscribe(subscribeParams, (err, data) => {
-      if (err) console.log(err, err.stack); // an error occurred
-      else console.log(data); // successful response
+    return new Promise((resolve, reject) => {
+      const subscribeParams = {
+        Protocol: 'sms',
+        TopicArn: this.topicArn,
+        Endpoint,
+      };
+      this.sns.subscribe(subscribeParams, (err, data) => {
+        if (err) reject(err, err.stack);
+        else resolve(data);
+      });
     });
   }
-  /* Create subscribe */
-  /* Publish sms */
   sendSms(smsBody, Subject, isTopic, PhoneNumber = '') {
-    let smsParams;
-    if (isTopic) {
-      smsParams = {
-        Message: smsBody, /* required */
-        MessageStructure: 'raw',
-        // PhoneNumber: '+905054146201',
-        Subject,
-        TopicArn: this.topicArn, /* required */
-      };
-    } else {
-      smsParams = {
-        Message: smsBody, /* required */
-        MessageStructure: 'raw',
-        PhoneNumber,
-        Subject,
-      };
-    }
-    this.sns.publish(smsParams, (err, data) => {
-      if (err) console.log(err, err.stack); // an error occurred
-      else console.log(data);
+    return new Promise((resolve, reject) => {
+      let smsParams;
+      if (isTopic) {
+        smsParams = {
+          Message: smsBody,
+          MessageStructure: 'raw',
+          Subject,
+          TopicArn: this.topicArn,
+        };
+      } else {
+        smsParams = {
+          Message: smsBody,
+          MessageStructure: 'raw',
+          PhoneNumber,
+          Subject,
+        };
+      }
+      this.sns.publish(smsParams, (err, data) => {
+        if (err) reject(err, err.stack);
+        else resolve(data);
+      });
     });
   }
-  /* Publish sms */
 };
