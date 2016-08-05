@@ -38,19 +38,33 @@ var config = {
 var sender = new Sender(config);
 
 /* Create subscribe */
-// sender.createSubscribe('+905054146201').then(function(response) {
+// sender.createSubscribe('+905054146201')
+// .then(function(response) {
 //   console.log(response);
+// })
+// .catch(function(err, err.stack) {
+//    console.log(err, err.stack)
 // });
 
 /* Send topic sms */
-// sender.sendSms('Sms body topic', 'Topic sms', true).then(function(response) {
+// sender.sendSms('Sms body topic', 'Topic sms', true)
+// .then(function(response) {
 //   console.log(response);
+// })
+// .catch(function(err, err.stack) {
+//    console.log(err, err.stack)
 // });
 
+
 /* Send direct sms */
-// sender.sendSms('Sms body direct', 'Topic sms', false, '+905054146201').then(function(response) {
+// sender.sendSms('Sms body direct', 'Topic sms', false, '+905054146201')
+// .then(function(response) {
 //   console.log(response);
+// })
+// .catch(function(err, err.stack) {
+//    console.log(err, err.stack)
 // });
+
 ```
 
 ![GIF](https://github.com/svtek/aws-sms-send/blob/master/aws.gif)
