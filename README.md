@@ -42,8 +42,8 @@ var sender = new Sender(config);
 // .then(function(response) {
 //   console.log(response);
 // })
-// .catch(function(err, err.stack) {
-//    console.log(err, err.stack)
+// .catch(function(err) {
+//    console.log(err)
 // });
 
 /* Send topic sms */
@@ -51,8 +51,8 @@ var sender = new Sender(config);
 // .then(function(response) {
 //   console.log(response);
 // })
-// .catch(function(err, err.stack) {
-//    console.log(err, err.stack)
+// .catch(function(err) {
+//    console.log(err)
 // });
 
 
@@ -61,8 +61,8 @@ var sender = new Sender(config);
 // .then(function(response) {
 //   console.log(response);
 // })
-// .catch(function(err, err.stack) {
-//    console.log(err, err.stack)
+// .catch(function(err) {
+//    console.log(err)
 // });
 
 ```
