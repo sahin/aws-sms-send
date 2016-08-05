@@ -4,7 +4,7 @@
   "description": "Aws sms sender",
   "main": "index.js",
   "scripts": {
-    "start": "node start.js",
+    "start": "node index.js",
     "build": "babel index.js -d lib"
   },
   "author": "Çağatay Çalı",
